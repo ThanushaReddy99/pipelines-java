@@ -21,5 +21,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     steps:
-- publish: $(System.DefaultWorkingDirectory)/bin/WebApp
-  artifact: WebApp
+steps:
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: pom.xml
+    artifactName: WebApp
