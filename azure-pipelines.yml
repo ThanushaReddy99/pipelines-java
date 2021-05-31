@@ -21,7 +21,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     steps:
-steps:
+
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: pom.xml
