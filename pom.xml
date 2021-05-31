@@ -16,7 +16,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+<repository>
+  <id>thanushareddy99</id>
+  <url>https://pkgs.dev.azure.com/thanushareddy99/_packaging/thanushareddy99/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+	
   <build>
     <finalName>helloworld</finalName>
     <plugins>
